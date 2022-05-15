@@ -171,10 +171,10 @@ export const Calculator = ()=>{
               <div>MS</div>
             </div>
             <div className="opcont" data-err={err!=null}>
-              <div onClick={action} className="oper" data-ch="%">%</div>
-              <div onClick={action} className="oper" data-ch="CE">CE</div>
-              <div onClick={action} className="oper" data-ch="C">C</div>
-              <div onClick={action} className="oper" data-ch="back">
+              <div onClick={action} className="oper" data-ch="%" title="%">%</div>
+              <div onClick={action} className="oper" data-ch="CE" title="CE">CE</div>
+              <div onClick={action} className="oper" data-ch="C" title="C">C</div>
+              <div onClick={action} className="oper" data-ch="back" title="Backspace">
                 <Icon fafa="faBackspace"/>
               </div>
               <div onClick={action} className="oper" data-ch="inv">1/x</div>
@@ -186,23 +186,23 @@ export const Calculator = ()=>{
                 <sup className="text-xss">2</sup>
                 √x
               </div>
-              <div onClick={action} className="oper" data-ch="/">/</div>
-              <div onClick={action} className="oper" data-ch="7">7</div>
-              <div onClick={action} className="oper" data-ch="8">8</div>
-              <div onClick={action} className="oper" data-ch="9">9</div>
-              <div onClick={action} className="oper" data-ch="x">x</div>
-              <div onClick={action} className="oper" data-ch="4">4</div>
-              <div onClick={action} className="oper" data-ch="5">5</div>
-              <div onClick={action} className="oper" data-ch="6">6</div>
-              <div onClick={action} className="oper" data-ch="-">-</div>
-              <div onClick={action} className="oper" data-ch="1">1</div>
-              <div onClick={action} className="oper" data-ch="2">2</div>
-              <div onClick={action} className="oper" data-ch="3">3</div>
-              <div onClick={action} className="oper" data-ch="+">+</div>
-              <div onClick={action} className="oper" data-ch="+-">+/-</div>
-              <div onClick={action} className="oper" data-ch="0">0</div>
-              <div onClick={action} className="oper" data-ch=".">.</div>
-              <div onClick={action} className="oper" data-ch="=">=</div>
+              <div onClick={action} className="oper" data-ch="/" title="/">/</div>
+              <div onClick={action} className="oper" data-ch="7" title="7">7</div>
+              <div onClick={action} className="oper" data-ch="8" title="8">8</div>
+              <div onClick={action} className="oper" data-ch="9" title="9">9</div>
+              <div onClick={action} className="oper" data-ch="x" title="x">x</div>
+              <div onClick={action} className="oper" data-ch="4" title="4">4</div>
+              <div onClick={action} className="oper" data-ch="5" title="5">5</div>
+              <div onClick={action} className="oper" data-ch="6" title="6">6</div>
+              <div onClick={action} className="oper" data-ch="-" title="-">-</div>
+              <div onClick={action} className="oper" data-ch="1" title="1">1</div>
+              <div onClick={action} className="oper" data-ch="2" title="2">2</div>
+              <div onClick={action} className="oper" data-ch="3" title="3">3</div>
+              <div onClick={action} className="oper" data-ch="+" title="+">+</div>
+              <div onClick={action} className="oper" data-ch="+-" title="+/-">+/-</div>
+              <div onClick={action} className="oper" data-ch="0" title="0">0</div>
+              <div onClick={action} className="oper" data-ch="." title=".">.</div>
+              <div onClick={action} className="oper" data-ch="=" title="=">=</div>
             </div>
           </div>
           <div className="calcHis flex flex-col">
