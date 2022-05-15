@@ -111,7 +111,7 @@ export const StartMenu = () => {
                 <div className="stAcbar">
                   <div className="gpname">Pinned</div>
                   <div className="gpbtn prtclk" onClick={clickDispatch} data-action="STARTALL">
-                    <div>All apps</div>
+                    <div>All Apps</div>
                     <Icon fafa="faChevronRight" width={8} />
                   </div>
                 </div>
@@ -207,15 +207,15 @@ export const StartMenu = () => {
             </div>
             <div className="relative powerMenu">
               <div className="powerCont" data-vis={start.pwctrl}>
-                <div className="flex prtclk" onClick={clickDispatch} data-action="WALLALOCK">
+                <div className="flex prtclk" onClick={clickDispatch} data-action="WALLALOCK" title="Lock">
                   <Icon msi="Lock" width={12} />
                   <span>Lock</span>
                 </div>
-                <div className="flex prtclk" onClick={clickDispatch} data-action="WALLSHUTDN">
+                <div className="flex prtclk" onClick={clickDispatch} data-action="WALLSHUTDN" title="Shut Down">
                   <Icon msi="PowerButton" width={12} />
-                  <span>Shut down</span>
+                  <span>Shut Down</span>
                 </div>
-                <div className="flex prtclk" onClick={clickDispatch} data-action="WALLRESTART">
+                <div className="flex prtclk" onClick={clickDispatch} data-action="WALLRESTART" title="Restart">
                   <Icon msi="Refresh" width={12} flip />
                   <span>Restart</span>
                 </div>
@@ -240,19 +240,19 @@ export const StartMenu = () => {
           </div>
           <div className="flex py-4 px-1 text-xs">
             <div className="opts w-1/2 flex justify-between">
-              <div value={atab === "All"} onClick={tabSw}>
+              <div value={atab === "All"} onClick={tabSw} title="All">
                 All
               </div>
-              <div value={atab === "Apps"} onClick={tabSw}>
+              <div value={atab === "Apps"} onClick={tabSw} title="Apps">
                 Apps
               </div>
-              <div value={atab === "Documents"} onClick={tabSw}>
+              <div value={atab === "Documents"} onClick={tabSw} title="Documents">
                 Documents
               </div>
-              <div value={atab === "Web"} onClick={tabSw}>
+              <div value={atab === "Web"} onClick={tabSw} title="Web">
                 Web
               </div>
-              <div value={atab === "More"} onClick={tabSw}>
+              <div value={atab === "More"} onClick={tabSw} title="More">
                 More
               </div>
             </div>
