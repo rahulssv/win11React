@@ -60,7 +60,7 @@ export const WidPane = () => {
                     return (
                       <div key={i} className="weekDay">
                         <div>{i === 0 ? "Today" : item.day}</div>
-                        <Icon src={`https://www.metaweather.com/static/img/weather/png/64/${item.icon}.png`} ext width={24} />
+                        <Icon src={`https://metaweather.com/static/img/weather/png/64/${item.icon}.png`} ext width={24} />
 
                         <div className="tempCont">{item.min}º</div>
                         <div className="tempCont">{item.max}º</div>
@@ -109,14 +109,14 @@ export const WidPane = () => {
                   <div className="shName">
                     <div className="flex">
                       <Icon fafa="faLandmark" width={8} />
-                      &nbsp;ON THIS DAY
+                      &nbsp;On This Day
                     </div>
                     <div>{widget.data.date}</div>
                   </div>
                   <div className="infotextCont">
                     <div className="dayInfo">{widget.data.event.text}</div>
-                    <a href={widget.data.event.pages[0].content_urls.desktop.page} rel="noopener noreferrer" target="_blank" className="wikiref">
-                      more on wiki
+                    <a href={widget.data.event.pages[0].content_urls.desktop.page} rel="noopener noreferrer" target="_blank" className="wikiref" title="More On Wiki">
+                      More On Wiki
                     </a>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export const WidPane = () => {
                       rel="noopener noreferrer"
                       key={i}
                       loading="lazy"
-                    >
+                    title="{article.title}">
                       <div className="tpNews">
                         <div className="tpSource">{article.source.name}</div>
                         <div className="tpArticle">{article.title}</div>
