@@ -12,9 +12,9 @@ export const EdgeMenu = ()=>{
   const dispatch = useDispatch()
 
   const iframes = {
-    "https://www.google.com/webhp?igu=1": "Google",
+    "https://google.com/webhp?igu=1": "Google",
     "https://bing.com": "Bing",
-    "https://www.youtube.com/embed/m0EHSoZzHEA": "Youtube",
+    "https://youtube.com/embed/m0EHSoZzHEA": "YouTube",
     "https://blueedge.me": "blueedge",
     "https://andrewstech.me": "\nandrewstech",
     "https://blueedge.me/unescape": "Unescape",
@@ -52,8 +52,8 @@ export const EdgeMenu = ()=>{
       setUrl("https://www.bing.com")
       setTyping(false)
     }else if(iframe && x==2){
-      setHist([url, "https://www.google.com/webhp?igu=1"])
-      setUrl("https://www.google.com/webhp?igu=1")
+      setHist([url, "https://google.com/webhp?igu=1"])
+      setUrl("https://google.com/webhp?igu=1")
       setTyping(false)
     }else if(iframe && x==3){
       if(e.key==="Enter"){
@@ -64,7 +64,7 @@ export const EdgeMenu = ()=>{
             qry = "https://"+qry
           }
         }else{
-          qry = "https://www.bing.com/search?q="+qry
+          qry = "https://bing.com/search?q="+qry
         }
 
         e.target.value = qry
@@ -138,7 +138,7 @@ export const EdgeMenu = ()=>{
                 onChange={typing}
                 data-payload={3}
                 value={url}
-                placeholder="Type url or a query to search"
+                placeholder="Type URL or a query to search"
                 type="text"/>
                 <Icon className="z-1 handcr"
                   src="google" ui onClick={action}
