@@ -25,7 +25,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-          architecture: amd64
+          architecture: arm64
 
       - name: Install dependencies & Build
         run: npm ci && REACT_APP_STOREURL=https://win11react.github.io/experimental/dev-store.json CI=false npm run build
